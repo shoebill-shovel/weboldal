@@ -181,6 +181,12 @@ td, th{
     font-size: var(--fontsize);
 }
 
+.btn-primary:hover{
+    border-color: #000000;
+    background-color: #004C4C;
+    font-size: var(--fontsize);
+}
+
 .btn-danger{
     border-color: #000000;
     font-size: var(--fontsize);
