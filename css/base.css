@@ -77,6 +77,10 @@ body.large caption{
     transform: scale(1.05);
 }
 
+.visually-hidden-focusable:focus{
+    color: #ffffff !important;
+}
+
 /*index.html*/
 
 .customclass-header .nav-link,
