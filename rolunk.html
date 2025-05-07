@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch the Time Órabolt - Rólunk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+  </head>
+<body class="bg-secondary normal">
+  <header class="container-max bg-primary customclass-header">
+
+    <nav>
+      <h2 class="visually-hidden">Ugrás a tartalomra</h2>
+      <a class="visually-hidden-focusable" href="#tartalom">Ugrás a tartalomra</a>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand"><span lang="en">Watch the Time</span> Órabolt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Kezdőlap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="rolunk.html">Rólunk</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="vasarlasisegedlet.html">Vásárlási Segédlet</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html">Galéria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="visszajelzes.html">Visszajelzés</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+    <main class="py-3" id="tartalom">
+
+        <div class="container-fluid mb-5">
+
+          <div class="container-fluid text-end">
+            <nav id="styleswitch">
+              <label for="styleSwitcher">Stílus: </label>
+              <select id="styleSwitcher">
+                <option value="normal">Normál</option>
+                <option value="large">Nagy betűméret</option>
+              </select>
+            </nav>
+          </div>
+    
+
+            <h1 class="text-center mb-5">Rólunk</h1>
+            
+            <div class="row align-items-center align-items-stretch">
+                <div class="col-12 col-md-8 text-left mb-4 mb-md-0">
+                    <h2>Kik vagyunk mi?</h2>
+                    <p>Egy kis csapat vagyunk, akiknek szenvedélye az órák. Célunk, hogy ne csak kiváló órákat kínáljunk, hanem <strong>őszinte</strong>, <strong>szakértői tanácsokkal</strong> is segítsünk megtalálni a tökéletes darabot – legyen szó elegáns, sportos vagy formabontó órákról.</p>
+                    <h2>Elérhetőségek</h2>
+                    <p> <strong>Üzletünkben</strong>: Hétfő-Péntek 10-18 óra<br>
+                        <strong>Telefonon</strong>: +36 0 123 4567<br>
+                        <strong>Email</strong>: wttorabolt@asdasd.hu<br>
+                        </p>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <figure class="customclass-imgbor">
+                    <img class="img-fluid " src="media/watchshop.png" alt="A képen boltunk látható.">
+                    <figcaption>Boltunk és az utcáról látható kirakata</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="container col-12 col-md-6 col-lg-4 bg-tetriary rounded shadow">
+            <div class="p-4 text-center">
+                <p>Elvesztél az órák útvesztőjében? Nem tudod, hogy milyen típusút válassz? Az alábbi <strong>oldalonunkon</strong> találhatsz segítséget!</p>
+                <a href="vasarlasisegedlet.html" class="btn btn-primary">Tovább a Vásárlási Segédlet oldalra</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="customclass-footer text-end bg-primary py-2 px-3"><!--style="position: fixed; bottom: 0; width: 100%;"-->
+        <p class="mb-0">&copy; 2025 <span lang="en">Watch the Time</span> Órabolt</p>
+    </footer>
+
+    <script src="js/styleswitch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

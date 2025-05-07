@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch the Time Órabolt - Vásárlási Segédlet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body class="bg-secondary normal">
+    
+    <header class="container-max bg-primary customclass-header">
+
+        <nav>
+          <h2 class="visually-hidden">Ugrás a tartalomra</h2>
+          <a class="visually-hidden-focusable" href="#tartalom">Ugrás a tartalomra</a>
+        </nav>
+    
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand"><span lang="en">Watch the Time</span> Órabolt</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="rolunk.html">Rólunk</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="vasarlasisegedlet.html">Vásárlási Segédlet</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="galeria.html">Galéria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="visszajelzes.html">Visszajelzés</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+    
+    </header>
+
+    <main class="py-3" id="tartalom">
+        <div>
+
+            <div class="container-fluid text-end">
+                <nav id="styleswitch">
+                  <label for="styleSwitcher">Stílus: </label>
+                  <select id="styleSwitcher">
+                    <option value="normal">Normál</option>
+                    <option value="large">Nagy betűméret</option>
+                  </select>
+                </nav>
+              </div>
+
+            <h1 class="text-center mb-4">Vásárlási Segédlet</h1>
+        </div>
+
+        <div class="col-12  text-center mb-4">
+            <p>Még nem találtad meg a tökéletes órát? Ebben az összefoglalóban bemutatjuk a karórák közti különbségeket. Ismerd meg a lehetőségeket, és találd meg azt, ami igazán hozzád illik!</p>
+        </div>
+
+        
+        <article>
+        <div class="text-center mb-3">
+            <h3>Táblázatunk</h3>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered shadow"><!--háttérképet ne felejtsd! remélem nem kell használni a table class-t-->
+                <caption class="text-center">
+                    <b>A táblázat adatai</b>
+                    <details>
+                        <summary>Súgó</summary>
+                        <p>A táblázatban az általunk vizsgált árkategóriákat és az azokra vonatkozó adatokat (jellemzők, márkák, modellek) tüntetjük fel.</p>
+                    </details>
+                </caption>
+                <thead>
+                    <tr class="text-center col-12 col-md-12 col-lg-12">
+                        <th class="p-3"><p>Ár</p></th>
+                        <th class="p-3"><p>Jellemzők</p></th>
+                        <th class="p-3"><p>Márkák ebben az árkategóriában</p></th>
+                        <th class="p-3"><p>Ajánlott óraszériák</p></th>
+                    </tr>
+                </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td><p>&le;100€</p></td>
+                            <td><p>japán kvarc szerkezet (digitális vagy analóg)</p></td>
+                            <td><p><span lang="en">Casio, G-Shock, Timex</span></p></td>
+                            <td>
+                                <p><span lang="en">Casio Vintage</span>,<br><span lang="en">G-Shock</span> GA-2100,<br><span lang="en">Timex Expedition</span>,</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p><strong>100 - 250€</strong></p></td>
+                            <td><p>(japán) szolár szerkezet,<br>félautomata, esetleg automata szerkezet,<br>esetleg üveg hátlap,</p></td>
+                            <td><p><span lang="en">Casio, Citizen, Seiko, Orient, Swatch, G-Shock</span></p></td>
+                            <td>
+                                <p><span lang="en">Orient Bambino</span>,<br><span lang="en">Timex Q</span>,<br><span lang="en">Seiko Sports</span>,</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>250 - 500€</strong></td>
+                            <td><p>svájci kvarc szerkezet vagy japán automata szerkezet,<br>üveg hátlap,<br>néha egyszerűbb komplikációk,</p></td>
+                            <td><p><span lang="en">Seiko, Citizen, Orient, Bulova, Swatch</span></p></td>
+                            <td>
+                                <p><span lang="en">Seiko SKX</span>,<br><span lang="en">Swatch X Omega</span>,<br><span lang="en">Orient Mako</span>,</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>500 - 1000€</strong></td>
+                            <td><p>legolcsóbb svájci automata szerkezet vagy japán szerkezet,<br>üveg hátlap,<br>egyszerűbb komplikáció(k),</p></td>
+                            <td><p><span lang="en">Seiko</span>, <span lang="de">Tissot</span>, <span lang="en">Bulova, Hamilton, Orient Star</span></p></td>
+                            <td>
+                                <p><span lang="en">Seiko Alpinist</span>,<br><span lang="de">Tissot</span> PRX,<br><span lang="en">Bulova Lunar Pilot Limited Edition</span>,<br><span lang="en">Hamilton Khaki</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>&gt;1000€</strong></td>
+                            <td><p>svájci vagy japán automata szerkezet,<br>üveg hátlap,<br>összetettebb komplikáció(k),</p></td>
+                            <td><p>Rengeteg luxusmárka, például <span lang="en">Grand Seiko, Longines, Frederique Constant, Tudor, Omega, Rolex</span></p></td>
+                            <td>
+                                <p><span lang="en">Tudor Black Bay</span>,<br><span lang="en">Grand Seiko ”Snowflake”</span>,<br><span lang="en">Longines Conquest</span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+    </article>
+
+    <aside>
+        <div class="container bg-tetriary rounded shadow mb-3 text-center"> <!--col-12 col-md-6 col-lg-4-->
+            <h2>
+                Kedvenc márkáink
+            </h2>
+            <p>Itt megadtunk néhány márkát, amiknek a weboldalain mi is szeretünk nézelődni</p>
+            <div class="bg-tertiary customclass-link py-1">
+                <ul class="customclass-list">
+                    <li>A <span lang="en">Casio</span> európai weboldala - <a href="https://www.casio.com/europe/"><span lang="en">Casio Europe</span></a><br></li>
+                    <li>A <span lang="en">Seiko</span> globális weboldala - <a href="https://www.seikowatches.com/global-en/"><span lang="en">Seiko global</span></a><br></li>
+                    <li>Az Omega weblapja - <a href="https://www.omegawatches.com/">Omega</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    </main>
+
+    <footer class="customclass-footer text-end bg-primary py-2 px-3"><!--style="position: fixed; bottom: 0; width: 100%;" meg py-3 px-4??-->
+        <p class="mb-0">&copy; 2025 <span lang="en">Watch the Time</span> Órabolt</p>
+    </footer>
+
+    <script src="js/styleswitch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

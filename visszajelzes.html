@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Watch the Time> Órabolt - Visszajelzés</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/base.css">
+    </head>
+<body class="bg-secondary normal">
+    
+    <header class="container-max bg-primary customclass-header">
+
+        <nav>
+          <h2 class="visually-hidden">Ugrás a tartalomra</h2>
+          <a class="visually-hidden-focusable" href="#tartalom">Ugrás a tartalomra</a>
+        </nav>
+    
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand"><span lang="en">Watch the Time</span> Órabolt</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="rolunk.html">Rólunk</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="vasarlasisegedlet.html">Vásárlási Segédlet</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="galeria.html">Galéria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="visszajelzes.html">Visszajelzés</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+    
+    </header>
+
+
+    <main class="py-3" id="tartalom">
+
+        <div class="container-fluid text-end">
+            <nav id="styleswitch">
+              <label for="styleSwitcher">Stílus: </label>
+              <select id="styleSwitcher">
+                <option value="normal">Normál</option>
+                <option value="large">Nagy betűméret</option>
+              </select>
+            </nav>
+        </div>
+
+    <div>
+        <h1 class="text-center">Visszajelzés</h1>
+    </div>
+
+    <div class="container col-lg-10">
+        <div class="text-left">
+            <form action="mailto:fce5fc@inf.elte.hu" method="post" enctype="text/plain">
+    
+                <div class="mb-2">
+                    <fieldset>
+                        <legend>Adataid</legend>
+                        <label for="nev" class="form-label">Neved</label>
+                        <input type="text" class="form-control w-100" name="nev" placeholder="Gipsz Jakab" id="nev">        
+                    </fieldset>
+                    <fieldset>
+                        <label for="email" class="form-label">E-mail címed</label>
+                        <input type="email" class="form-control w-100" name="email" placeholder="abc123@asdasd.com" id="email">
+                    </fieldset>
+                </div>
+
+                <div class="mb-2">
+                    <fieldset>
+                        
+                      <legend>Visszajelzés oka</legend>
+                        <input type="radio" name="voka" id="v1" value="kérdés">
+                        <label for="v1">Kérdés</label><br>
+                        
+                        <input type="radio" name="voka" id="v2" value="panasz">
+                        <label for="v2">Panasz</label><br>
+                        
+                        <input type="radio" name="voka" id="v3" value="weboldallal kapcsolatban">
+                        <label for="v3">Weboldallal kapcsolatos</label><br>
+                        
+                        <input type="radio" name="voka" id="v4" value="valami más">
+                        <label for="v4">Valami más</label><br>
+                    </fieldset>
+                </div>
+
+                <div class="mb-2">
+                    <fieldset>
+                        <label for="megjegyzes" class="form-label">Megjegyzés</label>
+                        <textarea class="form-control w-100" cols="50" rows="10" name="megjegyzes" id="megjegyzes" placeholder="Valamivel kapcsolatban..." maxlength="300"></textarea>
+                        <input type="checkbox" name="nvr" value="nem robot" id="nvr">
+                        <label for="nvr">Nem vagyok robot</label>
+                    </fieldset>
+                </div>
+    
+                
+    
+                <div class="mb-3">
+                    <fieldset>
+                        <legend>Adatok elküldése</legend>
+                        <input type="submit" value="Elküldés" class="btn btn-primary">
+                        <input type="reset" value="Törlés" class="btn btn-danger">
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    </main>
+
+    <footer class="customclass-footer text-end bg-primary py-2 px-3">
+        <p class="mb-0">&copy; 2025 <span lang="en">Watch the Time</span> Órabolt</p>
+    </footer>
+
+    <script src="js/styleswitch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

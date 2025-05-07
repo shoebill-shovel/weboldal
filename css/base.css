@@ -1,0 +1,183 @@
+:root {
+    --link-normal: #005a9e;
+    --link-visited: #762f97;
+    --link-hover: #3366cc;
+    --link-active: #cc3333;/* KITÖLTENI - link aktív állapot névnél kötelező a --*/
+    
+    --text-color:#000000;
+    --border-color:gray; 
+    /* CSS változók beállítása */
+    font-size: 1.2rem;
+    /* Alap betűméret beállítása */
+    font-family: "Bodoni MT", "Didot", "Didot LT STD", "Times New Roman", serif;/*keresd meg a gimp-ben, hogy mi volt*/
+}
+
+@font-face {
+    font-family: "Bodoni MT";
+    src: url("fonts/BodoniMT.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+  
+body{
+    font-family: "Bodoni MT", "Didot", "Didot LT STD", "Times New Roman", serif;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+body.normal{
+    --fontsize: 1.2rem;
+    font-size: var(--fontsize);
+
+    --bg-primary: #7B4F3D;/*#6A8CAF vagy #003366*/
+    --bg-secondary: #FEFEFA;/*#F5F5F5 vagy #E0E0E0*/
+    --bg-tertiary: #6A8CAF;/*#AFCBFF vagy #B0C4DE*/
+    --grey: #5f5f5f;
+}
+
+body.large{
+    --fontsize: 1.8rem;
+    font-size: var(--fontsize);
+
+    --bg-primary: #301b12;/*#6A8CAF vagy #003366*/
+    --bg-secondary: #ffffff;/*#F5F5F5 vagy #E0E0E0*/
+    --bg-tertiary: #6A8CAF;/*#AFCBFF vagy #B0C4DE*/
+    --grey: #282828;
+}
+
+body.large caption{
+    color: var(--grey);
+}
+
+.bg-primary{
+    background-color: var(--bg-primary) !important/*#6A8CAF vagy #003366*/
+}
+
+.bg-secondary{
+    background-color: var(--bg-secondary) !important;
+}
+
+.bg-tertiary{
+    background-color: var(--bg-teriary);
+}
+
+#styleswitch{
+    text-align: right;
+    margin: 10px;
+}
+
+.nav-link.active{
+    font-style: italic;
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+/*index.html*/
+
+.customclass-header .nav-link,
+.customclass-header .navbar-brand {
+  color: #ffffff !important;
+}
+
+.customclass-footer{
+    margin-top: auto;
+    width: 100%;
+    color: #ffffff;
+}
+
+.customclass-imgind, .customclass-imgbor{
+    border: 0.4rem solid var(--bg-primary);
+    /*border-width: 0.4rem !important;*/
+}
+
+/*rolunk.html*/
+
+/*vasarlasisegedlet.html*/
+.table{
+    --bs-table-bg: transparent !important;
+
+}
+
+.table tbody.table-group-divider{
+    background-color: transparent !important;
+    background-image: url("../media/watch_collection15.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    text-align: center;
+}
+
+td{
+    vertical-align: middle;
+    text-align: center;
+}
+
+th{
+    max-height: 100% !important;
+    text-align: center;
+    background-color: var(--grey) !important;
+    color: #ffffff !important;
+}
+
+td, th{
+    border: 0.1rem solid #000000 !important;
+    border-bottom: 0.1rem solid #000000 !important;
+    border-top: 0.1rem solid #000000 !important;
+}
+
+.customclass-link a:link {
+    color: var(--link-normal);
+}
+
+.customclass-link a:visited {
+    color: var(--link-visited);
+}
+
+.customclass-link a:hover {
+    color: var(--link-hover);
+}
+
+.customclass-link a:active {
+    color: var(--link-active);
+}
+
+.customclass-list{
+    list-style: none !important;
+    padding-left: 0rem !important;
+}
+
+/*galeria.html*/
+
+.carousel-item img {
+    object-fit     : scale-down;
+    object-position: center;
+    height         : 50vh;
+    width          : 50vh;
+    overflow       : hidden;
+    background-color: var(--bg-primary);
+}
+
+.customclass-video{/*mivel a videóra valamiért nem reagált*/
+    background-color: var(--bg-primary);
+    max-width: 75%;
+    max-height: 75%;
+}
+
+
+
+/*visszajelzés.html*/
+
+.btn-primary{
+    border-color: #000000;
+    background-color: #004C4C;
+    font-size: var(--fontsize);
+}
+
+.btn-danger{
+    border-color: #000000;
+    font-size: var(--fontsize);
+}

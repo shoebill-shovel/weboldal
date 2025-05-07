@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Watch the Time Órabolt - Kezdőlap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body class="bg-secondary normal">
+
+<header class="container-max bg-primary customclass-header">
+
+    <nav>
+      <h2 class="visually-hidden">Ugrás a tartalomra</h2>
+      <a class="visually-hidden-focusable" href="#tartalom">Ugrás a tartalomra</a>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand"><span lang="en">Watch the Time</span> Órabolt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Kezdőlap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="rolunk.html">Rólunk</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="vasarlasisegedlet.html">Vásárlási Segédlet</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html">Galéria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="visszajelzes.html">Visszajelzés</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<main class="py-3" id="tartalom">
+
+        <div class="container-fluid text-center">
+            
+          <div class="container-fluid text-end">
+            <nav id="styleswitch">
+              <label for="styleSwitcher">Stílus: </label>
+              <select id="styleSwitcher">
+                <option value="normal">Normál</option>
+                <option value="large">Nagy betűméret</option>
+              </select>
+            </nav>
+          </div>
+
+            <h1 class="text-center">Kezdőlap</h1>
+
+            <img class="img-fluid d-block mx-auto my-5 customclass-imgbor" src="media/watchthetimelogoblack.jpg" alt="A képen mesterséges intelligencia átal generált kép egy óraszerkezetről látható, valamint az órabolt neve">
+            
+            <p class="mb-3">Üdvözlünk a <strong><span lang="en">Watch the Time</span> Órabolt</strong> weboldalán! Ez a weboldal segít abban, hogy megtaláld azt az órát, amelyre a legjobban vágysz. Reméljük, hogy weboldalunkkal sikerül segítséget nyújtanunk és ötletet adnunk vásárlási szándékodhoz.</p>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row text-center align-items-stretch">
+            <div class="col-12 col-md-12 col-lg-4 d-flex flex-column">
+                <img class="img-fluid my-3 customclass-imgind" src="media/AboutusGraphic.jpg" alt="A képen egy vektorgrafikus ábra látható egy karóráról, fölötte az About us felirattal."><!-- d-block a képre?-->
+                <p>Tudj meg többet rólunk és boltunkról!</p>
+                <a href="rolunk.html" class="btn btn-primary mt-auto">Tovább a Rólunk oldalra</a>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 d-flex flex-column">
+                <img class="img-fluid my-3 customclass-imgind" src="media/BuyersguideGraphic.jpg" alt="A képen egy vektorgrafikus ábra látható egy karóráról, fölötte a Buyer's guide felirattal.">
+                <p>Bizonytalan vagy a karórák terén? Segítünk!</p>
+                <a href="vasarlasisegedlet.html" class="btn btn-primary mt-auto">Tovább a Vásárlási Segédlet oldalra</a>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 d-flex flex-column">
+                <img class="img-fluid my-3 customclass-imgind" src="media/GalleryGraphic.jpg" alt="A képen egy vektorgrafikus ábra látható egy karóráról, fölötte a Gallery felirattal.">
+                <p>Nézd meg kedvenc karóráinkat!</p>
+                <a href="galeria.html" class="btn btn-primary mt-auto">Tovább a Galéria oldalra</a>
+            </div>
+         </div>
+        </div>
+
+
+
+    </main>
+
+    <footer class="customclass-footer text-end bg-primary py-2 px-3"><!--style="position: fixed; bottom: 0; width: 100%;"-->
+        <p class="mb-0">&copy; 2025 <span lang="en">Watch the Time</span> Órabolt</p>
+    </footer>
+
+    <script src="js/styleswitch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
